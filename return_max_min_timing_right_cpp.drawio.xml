@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram name="ページ1" id="djMQSG0bvITCUlftsYSn">
+    <mxGraphModel dx="1358" dy="757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-1" target="ZxYLW0r55eJCLKdhdZTA-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-1" value="コードの実行" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-2" target="ZxYLW0r55eJCLKdhdZTA-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-2" value="データの初期化" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="136" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-3" target="ZxYLW0r55eJCLKdhdZTA-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-3" value="次のフレームの&lt;br&gt;データ取得" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="198" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-4" target="ZxYLW0r55eJCLKdhdZTA-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-4" value="1フレーム前の股関節角度との差分をとる" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="264" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-5" target="ZxYLW0r55eJCLKdhdZTA-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-5" value="股関節角度の差分の符号のみ取得" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-18" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-6" target="ZxYLW0r55eJCLKdhdZTA-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-6" value="1フレーム前と符号が&lt;br&gt;反転、かつinterval_index以上&lt;br&gt;離れているか" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="135" y="390" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-7" target="ZxYLW0r55eJCLKdhdZTA-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-7" value="この時のフレーム数（index）を取得し、pre_indexに格納" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-8" target="ZxYLW0r55eJCLKdhdZTA-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-8" value="この時の振幅を取得" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="570" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-20" value="ピークを取得できたら、max_flagを返す" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-23" value="" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;html=1;rounded=0;endSize=8;startSize=8;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-20" target="ZxYLW0r55eJCLKdhdZTA-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="450" as="sourcePoint" />
+            <mxPoint x="240" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="690" />
+              <mxPoint x="100" y="690" />
+              <mxPoint x="100" y="180" />
+              <mxPoint x="250" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZxYLW0r55eJCLKdhdZTA-24" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ZxYLW0r55eJCLKdhdZTA-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="430" as="sourcePoint" />
+            <mxPoint x="250" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="430" />
+              <mxPoint x="400" y="180" />
+              <mxPoint x="250" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
